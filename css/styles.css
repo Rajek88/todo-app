@@ -1,0 +1,217 @@
+body{                                       
+    min-height: 100vh;
+    margin: 0%;
+    padding: 0%;
+    background: rgb(231, 234, 236);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Georama', sans-serif;
+    background-image: url(../img/bg1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+/* ******************************************************* Styling of line *****************************************************/
+
+.hline{
+    background-color: #494949; 
+    width: 100%; 
+    height: 1px; 
+    border: none; 
+    border-radius: 20px; 
+}
+
+/* ******************************************************* Styling of main container *****************************************************/
+
+.container{
+    margin-top: 5%;
+    width: 50%;
+    min-width: 300px;
+    height: auto;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.562);
+    border-radius: 20px;
+    backdrop-filter: blur(5px);
+}
+
+/* ***************************** Styling of Input bar including icons and input search*****************************************************/
+
+.input-section{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border: 1px solid rgb(99, 99, 99);
+    border-radius: 15px;
+}
+
+
+.input-section input[type='text']{
+    flex-grow: 1;
+    outline: none;
+    border: none;
+    height: 40px;
+    padding: 10px;
+    width: 100px;
+    font-size: 18px;
+    background: transparent;
+}
+/* ******************************************************* Styling of Icon *****************************************************/
+
+#input-img1{
+    border: none;
+    height: 40px;
+    width: 40px;
+    text-align: center;
+    margin: 10px;
+}
+
+/* ******************************************************* Styling of + button *****************************************************/
+
+#input-btn2{
+    border: none;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    font-size: 70%;
+    color: #000;
+    background: transparent;
+}
+
+/* ******************************************************* Styling of Control section *****************************************************/
+
+.controls-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+/* ************************************* control buttons mark all complete and are clear all*****************************************************/
+
+.controls-container button{
+    border: none;
+    background: none;
+    color: #494949;
+    font-size: 16px;
+}
+
+/* ******************************************************* Styling of list container *****************************************************/
+
+.list-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* background: rgba(255, 255, 255, 0.904); */
+    border: 20px;
+    /* margin: 15px; */
+    /* padding: 15px 0px; */
+}
+/* .completed-list-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center; 
+    background: rgba(255, 255, 255, 0.904);
+    border: 20px;
+} */
+
+/* ******************************************************* Styling of list *****************************************************/
+
+.list{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /* border: 1px solid #494949; */
+    padding: 1px 10px;
+    border-radius: 15px;
+}
+/* ******************************************************* Styling of list's text *****************************************************/
+
+.list h3{
+    flex-grow: 1;
+    /* border: 1px solid rgb(0, 30, 56); */
+    font-size: 16px;
+}
+
+/* ******************************************************* Styling of dustbin button *****************************************************/
+
+.delete-list{
+    color: tomato;
+    margin-right: 10px;
+}
+
+/* ******************************************************* Styling of the control buttons *****************************************************/
+
+#mark-all{
+    color: rgb(0, 66, 128);
+}
+
+#mark-all i{
+    margin-right: 10px ;
+}
+
+#clear-completed{
+    color: maroon;
+}
+
+.delete-list{
+    border: none;
+    background: transparent;
+    font-size: 100%;
+}
+
+.status-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px;
+}
+
+h4{
+    font-size: 14px;
+    padding: 0%;
+    margin: 0%;
+}
+/* ******************************************************* Styling for responsiveness *****************************************************/
+
+@media only screen and (max-width: 800px) {
+    .container{
+        width: 80%;
+    }
+    .controls-container button{
+        font-size: 14px;
+    }
+    h3{
+        font-size: 16px;
+    }
+    .status-container{
+        text-align: center;
+    }
+    .status-container h4{
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+    }
+  }

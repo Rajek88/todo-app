@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rajendra's To Do App</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Rajendra Kulkarni">
+        <meta name="description" content="This TODO app is developed by Rajendra Kulkarni in pure html, css and javascript">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Georama&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <!-- ************************** MAIN CONTAINER******************************* -->
+        <main class="container">
+            <!-- *******************************INPUT SECTION********************************************* -->
+            <div class="input-section">
+                <img id="input-img1" src="img/file.png">
+                <!-- <div>Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div> -->
+                <input id="input-bar" type="text" placeholder="Type your todo list " required>
+                <button id="input-btn2" onclick="newlist();"><i class="fas fa-plus"></i></button>
+            </div>
+            <!-- ************************************ Controll section*************************************** -->
+            <div class="controls-container">
+                <button id="mark-all" type="button" onclick="checkAll();"><i class="fas fa-check-double"></i>Complete all tasks</button>
+                <button id="clear-completed" type="button" onclick="clearCompleted();">Clear completed</button>
+            </div>
+            <!-- <div class="completed-list-container">
+                <div class="list">
+                    <input class="list-radio" type="checkbox" onclick="checked(this)"><h3>Purchase Grocery</h3>
+                    <button type="button" class="delete-list" onclick="deleteListCompleted(this)"><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div> -->
+            <hr class="hline">
+            <!-- *****************************************List Container******************************************** -->
+            <div class="list-container">
+                <!-- *************************************INITIAL LIST 1************************************************** -->
+                <div class="list">
+                    <input class="list-radio" type="checkbox" onclick="checkedBox(this)" data-checked="false"><h3>A todo could be "Purchase Grocery and then return back without forgetting to take money back from shopkeeper"</h3>
+                    <button type="button" class="delete-list" onclick="deleteList(this)"><i class="fas fa-trash-alt"></i></button>
+                </div>
+                <!-- ***************************************Initial List 2************************************************* -->
+                <div class="list">
+                    <input class="list-radio" type="checkbox" onclick="checkedBox(this)" data-checked="false"><h3>This app is developed by Rajendra Kulkarni in pure html, css and javascript</h3>
+                    <button type="button" class="delete-list" onclick="deleteList(this)"><i class="fas fa-trash-alt"></i></button>
+                </div>
+            </div>
+            <hr class="hline">
+            <div class="status-container">
+                
+            </div>
+        </main>
+        <!-- **********************************Here I include js file************************************************* -->
+        <script src="js/todo.js"></script>
+    </body>
+</html>
